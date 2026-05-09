@@ -80,7 +80,6 @@ const FEATURE_FALLBACKS: Feature[] = [
   { id: -6, title: 'شراكة مع الأسرة', description: 'تواصل مستمر مع أولياء الأمور لدعم رحلة الطفل التعليمية.' },
 ]
 
-const COURSE_BADGES = ['فن', 'نشاط', 'لغة', 'اكتشاف']
 const COURSE_TAGS = ['برنامج مميز', 'برنامج تفاعلي', 'برنامج تأسيسي', 'برنامج متقدم']
 const COURSE_FALLBACK_IMAGES = [
   '/assets/images/test3.jpeg',
@@ -136,13 +135,13 @@ function Header() {
         </nav>
         <div className="nav-actions">
           <a className="contact-link" href="#contact" onClick={handleSectionClick}>تواصل</a>
-          <div className="account-menu">
+          {/* <div className="account-menu">
             <button type="button">حسابي ▾</button>
             <div className="dropdown">
               <Link to="/login">تسجيل الدخول</Link>
               <Link to="/signup">إنشاء حساب</Link>
             </div>
-          </div>
+          </div> */}
           <button
             type="button"
             className="menu-toggle"

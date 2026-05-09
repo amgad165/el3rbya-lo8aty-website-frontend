@@ -1289,15 +1289,21 @@ h2 {
   .hero-grid {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 4.8rem;
+    padding-top: 3.2rem;
+    padding-bottom: 2.4rem;
   }
 
   .hero-visual::before {
+    display: none;
     width: min(78vw, 500px);
     left: 50%;
     transform: translateX(-50%);
     border-top-right-radius: clamp(80px, 16vw, 180px);
     border-bottom-right-radius: clamp(80px, 16vw, 180px);
+  }
+
+  .hero-boy {
+    display: none;
   }
 
   .hero-content {
@@ -1306,7 +1312,8 @@ h2 {
   }
 
   .hero-visual {
-    min-height: 460px;
+    display: none;
+    min-height: 0;
   }
 
   .hero-floating-card {
